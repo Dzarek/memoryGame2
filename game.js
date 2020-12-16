@@ -37,6 +37,7 @@ const clickCard = function () {
                     if (gameResult == gamePairs) {
                         const endTime = new Date().getTime();
                         const gameTime = (endTime - startTime) / 1000
+                        gameTime.tofixed(0);
                         alert(`Udało się! Twój wynik to: ${gameTime} sekund. WESOŁYCH ŚWIĄT MOCZYMORDY! :D`)
                         location.reload();
                     }
